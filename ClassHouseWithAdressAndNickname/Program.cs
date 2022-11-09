@@ -52,6 +52,6 @@ class House
 
     public override int GetHashCode()
     {
-        throw new NotImplementedException();
+        return HashCode.Combine(MyAddress);
     }
 }
