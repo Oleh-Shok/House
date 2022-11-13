@@ -1,30 +1,30 @@
 ﻿House house = new House();
 
-Console.WriteLine($"House address: {house.MyAddress}.");
+Console.WriteLine($"House address: {house.Address}.");
 Console.WriteLine($"House nickname: {house.Nickname}.");
 Console.WriteLine($"Checking Nickname (if null write house address): {house.ToString()}.");
 Console.WriteLine($"Checking new address: {house.ChangedAddress}.");
-Console.WriteLine($"Comparison of two houses: {house.MyAddress.Equals(house.ChangedAddress)}.");
+Console.WriteLine($"Comparison of two houses: {house.Address.Equals(house.ChangedAddress)}.");
 
 
 class House
 {
-    public string MyAddress { get; private set; }
+    public string Address { get; private set; }
     
     public string? Nickname { get; set; }
-
+        
     public string ChangedAddress
     {
-        get => MyAddress;
+        get => Address;
         set
         {
-            if (MyAddress.Length < 5)
+            if (Address.Length < 5)
             {
                 return;
             }
             else
             {
-                MyAddress = value;
+                Address = value;
             }
         }
     }
@@ -37,7 +37,7 @@ class House
         }
         else
         {
-            return MyAddress;
+            return Address;
         }
     }
 
@@ -45,13 +45,13 @@ class House
     {
         if (obj is House house)
         {
-            return house.MyAddress == house.Nickname;
+            return house.Address == house.Nickname;
         }
         return false;
     }
 
     public override int GetHashCode()
     {
-        return HashCode.Combine(MyAddress);
+        return HashCode.Combine(Address);
     }
 }
