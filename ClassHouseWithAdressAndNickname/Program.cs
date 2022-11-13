@@ -3,11 +3,12 @@
     Nickname = "Green house"
 };
 
+house.SetName("Kostopil, Independece square");
+
 Console.WriteLine($"House address: {house.Address}.");
 Console.WriteLine($"House nickname: {house.Nickname}.");
 Console.WriteLine($"Checking Nickname (if null write house address): {house.ToString()}.");
-Console.WriteLine($"Checking new address: {house.ChangedAddress}.");
-Console.WriteLine($"Comparison of two houses: {house.Address.Equals(house.ChangedAddress)}.");
+Console.WriteLine($"Comparison of two houses: {house.Address.Equals(house.Address)}.");
 
 
 class House
@@ -19,7 +20,17 @@ class House
     public House (string address)
     {
         Address = address;
-    }           
+    }
+
+    public void SetName(string NewAddress)
+    {
+        if (NewAddress.Length < 5)
+        {
+            return;
+        }
+
+        Address = NewAddress;
+    }
 
     public override string ToString()
     {
