@@ -9,9 +9,9 @@ Console.WriteLine($"Comparison of two houses: {house.MyAddress.Equals(house.Chan
 
 class House
 {
-    public string MyAddress { get; private set; } = "Rivne, Bukovynska street";
+    public string MyAddress { get; private set; }
     
-    public string? Nickname { get; set; } = "Native home";
+    public string? Nickname { get; set; }
 
     public string ChangedAddress
     {
