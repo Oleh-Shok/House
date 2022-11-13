@@ -1,4 +1,4 @@
-﻿House house = new House();
+﻿House house = new House(address: "Rivne, Bukovynska street");
 
 Console.WriteLine($"House address: {house.Address}.");
 Console.WriteLine($"House nickname: {house.Nickname}.");
@@ -12,6 +12,11 @@ class House
     public string Address { get; private set; }
     
     public string? Nickname { get; set; }
+
+    public House (string address)
+    {
+        Address = address;
+    }
         
     public string ChangedAddress
     {
