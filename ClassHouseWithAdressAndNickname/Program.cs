@@ -53,6 +53,16 @@ class House
         return false;
     }
 
+    public static bool operator ==(House first, House second)
+    {
+        return first == second;
+    }
+
+    public static bool operator !=(House first, House second)
+    {
+        return first != second;
+    }
+
     public override int GetHashCode()
     {
         return HashCode.Combine(Address);
