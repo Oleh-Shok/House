@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net7.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net7.0": []
   },
   "packageFolders": {
     "/Users/olegshok/.nuget/packages/": {}
@@ -13,25 +13,25 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/olegshok/Projects/ClassHouseWithAdressAndNickname/ClassHouseWithAdressAndNickname/House.csproj",
+      "projectUniqueName": "/Users/olegshok/Projects/House/House/ClassHouseWithAdressAndNickname/House.csproj",
       "projectName": "House",
-      "projectPath": "/Users/olegshok/Projects/ClassHouseWithAdressAndNickname/ClassHouseWithAdressAndNickname/House.csproj",
+      "projectPath": "/Users/olegshok/Projects/House/House/ClassHouseWithAdressAndNickname/House.csproj",
       "packagesPath": "/Users/olegshok/.nuget/packages/",
-      "outputPath": "/Users/olegshok/Projects/ClassHouseWithAdressAndNickname/ClassHouseWithAdressAndNickname/obj/",
+      "outputPath": "/Users/olegshok/Projects/House/House/ClassHouseWithAdressAndNickname/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/olegshok/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net7.0"
       ],
       "sources": {
         "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "projectReferences": {}
         }
       },
@@ -43,8 +43,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net7.0": {
+        "targetAlias": "net7.0",
         "imports": [
           "net461",
           "net462",
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
       }
     }
   }

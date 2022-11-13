@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yBT6C1xkbhBsc6OTxc6MxerP+FTTyo60AK00GdxhbUDGV7T/igxjQ+zHVvii/MovLCDqLOqLLw144M3FN/GLqg==",
+  "dgSpecHash": "TVfChKT5aJiZuRNoW2txat4Hm62bEQMqo1sNepQI97fx/9n2Ry9oSPXHeuvCkw/5NKildTTrWsjoxko3efeqmA==",
   "success": true,
-  "projectFilePath": "/Users/olegshok/Projects/ClassHouseWithAdressAndNickname/ClassHouseWithAdressAndNickname/House.csproj",
+  "projectFilePath": "/Users/olegshok/Projects/House/House/ClassHouseWithAdressAndNickname/House.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
