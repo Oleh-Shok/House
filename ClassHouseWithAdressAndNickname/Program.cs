@@ -16,23 +16,7 @@ class House
     public House (string address)
     {
         Address = address;
-    }
-        
-    public string ChangedAddress
-    {
-        get => Address;
-        set
-        {
-            if (Address.Length < 5)
-            {
-                return;
-            }
-            else
-            {
-                Address = value;
-            }
-        }
-    }
+    }           
 
     public override string ToString()
     {
