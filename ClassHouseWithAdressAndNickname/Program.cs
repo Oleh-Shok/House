@@ -22,7 +22,7 @@ class House
         Address = address;
     }
 
-    public void SetName(string NewAddress)
+    public void SetAddress(string NewAddress)
     {
         if (NewAddress.Length < 5)
         {
