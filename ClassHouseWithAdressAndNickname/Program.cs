@@ -48,7 +48,7 @@ class House
     {
         if (obj is House house)
         {
-            return house.Address == house.Nickname;
+            return house.Address == Address;
         }
         return false;
     }
