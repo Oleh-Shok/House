@@ -3,7 +3,7 @@
     Nickname = "Green house"
 };
 
-house.SetName("Kostopil, Independece square");
+house.SetAddress("Kostopil, Independece square");
 
 Console.WriteLine($"House address: {house.Address}.");
 Console.WriteLine($"House nickname: {house.Nickname}.");
