@@ -11,7 +11,8 @@ House house2 = new House("Blue house");
 Console.WriteLine($"House address: {house.Address}.");
 Console.WriteLine($"House nickname: {house.Nickname}.");
 Console.WriteLine($"Checking Nickname (if null write house address): {house.ToString()}.");
-Console.WriteLine($"Comparison of two houses: {house1.Equals(house2)}.");
+Console.WriteLine($"Are the two houses at the same address? - : {house1.Equals(house2)}.");
+
 Console.WriteLine(house1 == house2);
 Console.WriteLine(house1 != house2);
 
