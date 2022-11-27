@@ -5,10 +5,13 @@
 
 house.SetAddress("Kostopil, Independece square");
 
+House house1 = new House("Blue house");
+House house2 = new House("Blue house");
+
 Console.WriteLine($"House address: {house.Address}.");
 Console.WriteLine($"House nickname: {house.Nickname}.");
 Console.WriteLine($"Checking Nickname (if null write house address): {house.ToString()}.");
-Console.WriteLine($"Comparison of two houses: {house.Address.Equals(house.Address)}.");
+Console.WriteLine($"Comparison of two houses: {house1.Equals(house2)}.");
 
 
 class House
@@ -26,8 +29,8 @@ class House
     {
         if (NewAddress.Length < 5)
         {
-            return;
-        }
+            throw new NotImplementedException();
+        };
 
         Address = NewAddress;
     }
@@ -53,14 +56,14 @@ class House
         return false;
     }
 
-    public static bool operator ==(House first, House second)
+    public static bool operator ==(House house1, House house2)
     {
-        return first == second;
+        return house1 == house2;
     }
 
-    public static bool operator !=(House first, House second)
+    public static bool operator !=(House house1, House house2)
     {
-        return first != second;
+        return house1 != house2;
     }
 
     public override int GetHashCode()
