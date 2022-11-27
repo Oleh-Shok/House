@@ -13,8 +13,8 @@ Console.WriteLine($"House nickname: {house.Nickname}.");
 Console.WriteLine($"Checking Nickname (if null write house address): {house.ToString()}.");
 Console.WriteLine($"Are the two houses at the same address? - : {house1.Equals(house2)}.");
 
-Console.WriteLine(house1 == house2);
-Console.WriteLine(house1 != house2);
+//Console.WriteLine(house1 == house2);
+//Console.WriteLine(house1 != house2);
 
 
 class House
