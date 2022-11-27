@@ -12,6 +12,8 @@ Console.WriteLine($"House address: {house.Address}.");
 Console.WriteLine($"House nickname: {house.Nickname}.");
 Console.WriteLine($"Checking Nickname (if null write house address): {house.ToString()}.");
 Console.WriteLine($"Comparison of two houses: {house1.Equals(house2)}.");
+Console.WriteLine(house1 == house2);
+Console.WriteLine(house1 != house2);
 
 
 class House
@@ -56,14 +58,14 @@ class House
         return false;
     }
 
-    public static bool operator ==(House house1, House house2)
+    public static bool operator ==(House house3, House house4)
     {
-        return house1 == house2;
+        return house3.Equals(house3);
     }
 
-    public static bool operator !=(House house1, House house2)
+    public static bool operator !=(House house3, House house4)
     {
-        return house1 != house2;
+        return !(house3 == house4);
     }
 
     public override int GetHashCode()
